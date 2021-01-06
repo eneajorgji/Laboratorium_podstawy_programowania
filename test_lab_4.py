@@ -1,8 +1,18 @@
 import numpy as np
 
+def first_composition(n, m):
+    upper_triangle = np.triu_indices(n)
+    ones = np.ones((n, m))
+    ones[upper_triangle] = -1
 
-# a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
+    new_mat = ones - np.diag(np.diag(ones))
+
+    return new_mat
 
 
-# b = np.resize(a, (a.size/2, a.size/2))
+n = 6
+m = 6
 
+resuult_firt_comp = first_composition(n, m)
+
+print(resuult_firt_comp)
