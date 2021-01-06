@@ -79,7 +79,7 @@ def normalize(array_zad_6):
     return normalized_matrix
 
 
-array_zad_6 = np.array([[1, 2, 2], [4, 5, 8], [9, 8, 2]])
+array_zad_6 = np.array([[1, 2, 2], [4, 5, 8]])
 norm_matrix = normalize(array_zad_6)
 
 print(norm_matrix)
