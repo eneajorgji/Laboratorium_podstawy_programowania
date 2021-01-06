@@ -107,6 +107,24 @@ print(result_to_matrix)
 # Zadanie 8
 print("Zadanie 8")
 
+
+def first_composition(n, m):
+    upper_triangle = np.triu_indices(n)
+    ones = np.ones((n, m))
+    ones[upper_triangle] = -1
+
+    new_matrix = ones - np.diag(np.diag(ones))
+
+    return new_matrix
+
+
+n = 6
+m = 6
+
+result_first_composition = first_composition(n, m)
+
+print(result_first_composition)
+
 # Zadanie 9
 print("Zadanie 9")
 
