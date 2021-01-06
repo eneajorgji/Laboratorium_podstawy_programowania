@@ -87,6 +87,23 @@ print(norm_matrix)
 # Zadanie 7
 print("Zadanie 7")
 
+
+# dla mnie slowo "dlugosc" jest dwuznaczne. Czy chodzi o wynik dlugosci wektora,
+# czy ilosc elemnentow?
+# Zalozylem ze chodzi o ilosc elementow w tym wektorze
+
+def to_matrix(vector_zad_7):
+    n_div_2 = int(len(vector_zad_7) / 2)
+
+    new_matrix = np.resize(vector_zad_7, (n_div_2, n_div_2))
+
+    return new_matrix
+
+
+vector_zad_7 = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+result_to_matrix = to_matrix(vector_zad_7)
+print(result_to_matrix)
+
 # Zadanie 8
 print("Zadanie 8")
 
