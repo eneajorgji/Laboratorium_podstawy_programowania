@@ -128,5 +128,21 @@ print(result_first_composition)
 # Zadanie 9
 print("Zadanie 9")
 
+
+def second_composition(n, m):
+    upper_triangle = np.triu_indices(n, 1)
+    ones = np.cumsum(np.ones((n, m)), axis=0)
+    ones[upper_triangle] = -1
+
+    return ones
+
+
+n = 10
+m = 10
+
+result_second_composition = second_composition(n, m)
+
+print(result_second_composition)
+
 # Zadanie 10
 print("Zadanie 10")
