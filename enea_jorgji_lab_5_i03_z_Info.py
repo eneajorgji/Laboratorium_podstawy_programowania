@@ -42,6 +42,7 @@ plt.grid(True)
 
 plt.show()
 
+
 # Zadania 3
 def scatter_plot(a, b):
     a = [3, 1, 4, 7, 10, 8, 0]
@@ -60,7 +61,26 @@ b = [2, 5, 8, 11]
 
 result_zad_3 = scatter_plot(a, b)
 print(result_zad_3)
+
 # Zadania 4
+def bar_plot(x, y):
+    plt.bar(x, width=1, height=y)
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.xticks([1, 2, 3, 4, 5, 6])
+
+    plt.show()
+
+
+# y = np.array([[1, 8], [2, 5], [3, 9], [4, 5]])
+
+x = [1, 2, 3, 4, 5, 6]
+y = [8, 5, 6, 3, 5, 6]
+
+reslut_zad_4 = bar_plot(x, y)
+
+print(reslut_zad_4)
+
 # Zadania 5
 # Zadania 6
 # Zadania 7
