@@ -3,22 +3,21 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-# Zadania 2
+# Zadania 3
+def scatter_plot(a, b):
+    a = [3, 1, 4, 7, 10, 8, 0]
+    b = [2, 5, 8, 11, -6, -3, 4]
 
-def func_plot(x):
-    value_of_func = pow(x, 2) - x * 4 + 8
-    return value_of_func
+    plt.scatter(a, b)
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.grid(True)
+
+    plt.show()
 
 
-vmin = 1
-vmax = 25
-step = .25
+a = [1, 4, 7, 10]
+b = [2, 5, 8, 11]
 
-x = np.arange(vmin, vmax, step)
-
-plt.plot(x, func_plot(x))
-plt.xlabel("x")
-plt.ylabel("y")
-plt.grid(True)
-
-plt.show()
+result_zad_3 = scatter_plot(a, b)
+print(result_zad_3)
