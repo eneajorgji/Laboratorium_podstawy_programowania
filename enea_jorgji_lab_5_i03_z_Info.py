@@ -8,10 +8,10 @@ def simple_plot(a, b):
     plt.plot((a), label="red", color="red")
     plt.plot((b), label="blue", color="blue")
 
-    plt.xlabel("X")
-    plt.ylabel("Y")
+    plt.xlabel("x")
+    plt.ylabel("y")
 
-    plt.legend(bbox_to_anchor=(1.01, 1),title="Legenda", loc='upper left', ncol=1)
+    plt.legend(bbox_to_anchor=(1.01, 1), title="Legenda", loc='upper left', ncol=1)
 
     plt.show()
 
@@ -19,10 +19,29 @@ def simple_plot(a, b):
 a = [1, 4, 7, 10]
 b = [2, 5, 8, 11]
 
-res_simple_plot = simple_plot(a, b)
-print(res_simple_plot)
+result_simple_plot = simple_plot(a, b)
+print(result_simple_plot)
+
 
 # Zadania 2
+def func_plot(x):
+    value_of_func = pow(x, 2) - x * 4 + 8
+    return value_of_func
+
+
+vmin = 1
+vmax = 25
+step = .25
+
+x = np.arange(vmin, vmax, step)
+
+plt.plot(x, func_plot(x))
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(True)
+
+plt.show()
+
 # Zadania 3
 # Zadania 4
 # Zadania 5
