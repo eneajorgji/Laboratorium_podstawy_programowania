@@ -116,6 +116,18 @@ y = np.arange(-2, 8, 0.3)
 result_zad_6 = contour_plot(x, y)
 
 # Zadania 7
+def box_plot(n, m):
+    matrix = np.random.randn(n, m)
+    plt.boxplot(matrix)
+
+    plt.xlabel("numer wketora")
+    plt.ylabel("liczba probek")
+
+    plt.show()
+
+
+result_zad_7 = box_plot(9, 12)
+
 # Zadania 8
 # Zadania 9
 # Zadania 10
