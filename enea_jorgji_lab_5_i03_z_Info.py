@@ -140,5 +140,21 @@ sizes = [45.7, 24.3, 9.5, 7.5, 3]
 labels = ["Shareholder 1", "Shareholder 2", "Shareholder 3", "Shareholder 4", "Shareholder 5"]
 result_zad_8 = pie_plot(sizes, labels)
 
+
 # Zadania 9
+def make_subplots(m1, m2):
+    figure, (ax1, ax2) = plt.subplots(ncols=2)
+
+    ax1.plot(m1)
+    ax1.grid(True)
+
+    ax2.plot(m2, marker="o")
+
+    plt.show()
+
+
+m1 = np.random.randn(13, 3)
+m2 = np.random.randn(18, 4)
+result_zad_9 = make_subplots(m1, m2)
+
 # Zadania 10
