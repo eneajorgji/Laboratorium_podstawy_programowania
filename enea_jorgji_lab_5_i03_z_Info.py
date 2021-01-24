@@ -62,6 +62,7 @@ b = [2, 5, 8, 11]
 result_zad_3 = scatter_plot(a, b)
 print(result_zad_3)
 
+
 # Zadania 4
 def bar_plot(x, y):
     plt.bar(x, width=1, height=y)
@@ -77,11 +78,25 @@ def bar_plot(x, y):
 x = [1, 2, 3, 4, 5, 6]
 y = [8, 5, 6, 3, 5, 6]
 
-reslut_zad_4 = bar_plot(x, y)
+result_zad_4 = bar_plot(x, y)
 
-print(reslut_zad_4)
+print(result_zad_4)
+
 
 # Zadania 5
+def heat_plot(matrix_n, matrix_m):
+    matrix = np.random.random((matrix_n, matrix_m))
+
+    plt.imshow(matrix, cmap='jet', interpolation='nearest')
+    plt.colorbar()
+
+    plt.show()
+
+
+result_heat_plot = heat_plot(15, 15)
+
+print(result_heat_plot)
+
 # Zadania 6
 # Zadania 7
 # Zadania 8

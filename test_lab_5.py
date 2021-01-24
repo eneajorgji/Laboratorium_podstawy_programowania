@@ -3,22 +3,16 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-# Zadania 4
+# Zadania 5
+def heat_plot(matrix_n, matrix_m):
+    matrix = np.random.random((matrix_n, matrix_m))
 
-def bar_plot(x, y):
-    plt.bar(x, width=1, height=y)
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.xticks([1, 2, 3, 4, 5, 6])
+    plt.imshow(matrix, cmap='jet', interpolation='nearest')
+    plt.colorbar()
 
     plt.show()
 
 
-# y = np.array([[1, 8], [2, 5], [3, 9], [4, 5]])
+result_heat_plot = heat_plot(15, 15)
 
-x = [1, 2, 3, 4, 5, 6]
-y = [8, 5, 6, 3, 5, 6]
-
-reslut_zad_4 = bar_plot(x, y)
-
-print(reslut_zad_4)
+print(result_heat_plot)
