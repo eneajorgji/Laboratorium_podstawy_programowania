@@ -3,16 +3,30 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-# Zadania 5
-def heat_plot(matrix_n, matrix_m):
-    matrix = np.random.random((matrix_n, matrix_m))
+# x = np.arange(0, 6, 0.1)
+# y = np.arange(0, 6, 0.1)
+# X, Y = np.meshgrid(x, y)
+# Z = np.sin(X) * np.cos(Y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.contour(X, Y, Z)
+# plt.show()
 
-    plt.imshow(matrix, cmap='jet', interpolation='nearest')
-    plt.colorbar()
+
+# Zadania 6
+
+def contour_plot(x, y):
+    X, Y = np.meshgrid(x, y)
+    Z = np.sqrt((X ** 2 + Y ** 2))
+    CS = plt.contour(X, Y, Z)
+
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.clabel(CS, inline=1, fontsize=10)
 
     plt.show()
 
 
-result_heat_plot = heat_plot(15, 15)
-
-print(result_heat_plot)
+x = np.arange(5, 15, 0.4)
+y = np.arange(-2, 8, 0.3)
+result_zad_6 = contour_plot(x, y)
