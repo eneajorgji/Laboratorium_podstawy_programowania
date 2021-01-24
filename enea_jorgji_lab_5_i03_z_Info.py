@@ -115,6 +115,7 @@ x = np.arange(5, 15, 0.4)
 y = np.arange(-2, 8, 0.3)
 result_zad_6 = contour_plot(x, y)
 
+
 # Zadania 7
 def box_plot(n, m):
     matrix = np.random.randn(n, m)
@@ -128,6 +129,16 @@ def box_plot(n, m):
 
 result_zad_7 = box_plot(9, 12)
 
+
 # Zadania 8
+def pie_plot(sizes, labels):
+    plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+    plt.show()
+
+
+sizes = [45.7, 24.3, 9.5, 7.5, 3]
+labels = ["Shareholder 1", "Shareholder 2", "Shareholder 3", "Shareholder 4", "Shareholder 5"]
+result_zad_8 = pie_plot(sizes, labels)
+
 # Zadania 9
 # Zadania 10

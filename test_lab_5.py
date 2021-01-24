@@ -3,25 +3,13 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-# x = np.arange(0, 6, 0.1)
-# y = np.arange(0, 6, 0.1)
-# X, Y = np.meshgrid(x, y)
-# Z = np.sin(X) * np.cos(Y)
-# plt.xlabel('x')
-# plt.ylabel('y')
-# plt.contour(X, Y, Z)
-# plt.show()
+# Zadania 8
 
-
-# Zadania 7
-def box_plot(n, m):
-    matrix = np.random.randn(n, m)
-    plt.boxplot(matrix)
-
-    plt.xlabel("numer wketora")
-    plt.ylabel("liczba probek")
-
+def pie_plot(sizes, labels):
+    plt.pie(sizes, labels=labels, autopct='%1.1f%%')
     plt.show()
 
 
-result_zad_7 = box_plot(9, 12)
+sizes = [45.7, 24.3, 9.5, 7.5, 3]
+labels = ["Shareholder 1", "Shareholder 2", "Shareholder 3", "Shareholder 4", "Shareholder 5"]
+result_zad_8 = pie_plot(sizes, labels)
