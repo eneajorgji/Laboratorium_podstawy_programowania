@@ -15,8 +15,8 @@ print("Zadanie 2 \n", df)
 # Zadanie 3
 bigger_than_o5 = 0
 
-for key, value in df.iteritems():
-    df["col1"] = df["col1"].apply(if value > 0.5)
+# for key, value in df.iteritems():
+#     df["col1"] = df["col1"].apply(if value > 0.5)
 
     # print("Zadanie 3 \n")
 

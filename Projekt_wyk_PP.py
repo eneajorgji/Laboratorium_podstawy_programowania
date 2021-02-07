@@ -26,8 +26,7 @@ def encrypt_matrix(password):
         print(char, end="")
         encrypted_matrix_password.append(char)
 
-    # # wydrukuj
-    # print(encrypted_matrix_password)
+    print(encrypted_matrix_password)
 
 
 enc_mat = encrypt_matrix("bardzodlugiehaslo2021")
