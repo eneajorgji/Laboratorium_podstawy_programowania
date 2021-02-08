@@ -8,7 +8,6 @@ arr_zad_1 = np.random.randint(2, size=(10, 5))
 print("Zadanie 1\n", arr_zad_1)
 
 # Zadanie 2
-
 df = pd.DataFrame(arr_zad_1, columns=["col1", "col2", "col3", "col4", "col5"])
 print("Zadanie 2 \n", df)
 
@@ -30,4 +29,7 @@ print(column_count)
 
 # Zadanie 4
 # Zadanie 5
+df_2 = df.append(df, ignore_index=True)
+print(df_2)
+
 # Zadanie 6
