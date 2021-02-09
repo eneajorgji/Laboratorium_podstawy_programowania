@@ -33,3 +33,9 @@ df_2 = df.append(df, ignore_index=True)
 print(df_2)
 
 # Zadanie 6
+arr_zad_6 = np.random.randint(2, size=(20, 5))
+df_zad_6 = pd.DataFrame(arr_zad_6, columns=["col1", "col2", "col3", "col4", "col5"])
+print(df_zad_6)
+
+df_zad_6_joined = pd.concat([df_zad_6, df_2], axis=1)
+print(df_zad_6_joined)
