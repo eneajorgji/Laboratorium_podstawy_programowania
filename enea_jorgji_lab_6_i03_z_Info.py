@@ -3,9 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Zadanie 1
-arr_zad_1 = np.random.randint(2, size=(10, 5))
+arr_zad_1 = np.random.uniform(0, 1, size=(10, 5))  # uniform distribution
 
 print("Zadanie 1\n", arr_zad_1)
+
+# arr_zad_1_uniformdist = np.random.uniform(0, 1, size=(10, 5))
+# print("arr zad 1 uniformdist \n", arr_zad_1_uniformdist)
 
 # Zadanie 2
 df = pd.DataFrame(arr_zad_1, columns=["col1", "col2", "col3", "col4", "col5"])
