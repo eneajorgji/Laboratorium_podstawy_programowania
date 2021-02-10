@@ -7,9 +7,6 @@ arr_zad_1 = np.random.uniform(0, 1, size=(10, 5))  # uniform distribution
 
 print("Zadanie 1\n", arr_zad_1)
 
-# arr_zad_1_uniformdist = np.random.uniform(0, 1, size=(10, 5))
-# print("arr zad 1 uniformdist \n", arr_zad_1_uniformdist)
-
 # Zadanie 2
 df = pd.DataFrame(arr_zad_1, columns=["col1", "col2", "col3", "col4", "col5"])
 print("Zadanie 2 \n", df)
@@ -23,6 +20,10 @@ sum_of_bigger = df_to_sum.sum()
 print("Zadanie 3 \n", sum_of_bigger)
 
 # Zadanie 4
+plt.bar(sum_of_bigger, height=50)
+plt.show()
+
+write_to_csv = sum_of_bigger.to_csv("DF_zad_4.csv")
 
 print("Zadanie 4 \n")
 
@@ -46,7 +47,6 @@ print("Zadanie 6 - sort by col1 and col 6 \n", df_zad_6_sort)
 df_zad_6_sort_index = df_zad_6_sort.sort_index()
 print("Zadanie 6 - sort index \n", df_zad_6_sort_index)
 
-
-#wykres pudelkowy
+# wykres pudelkowy
 plt.boxplot(df_zad_6_sort_index)
 plt.show()
