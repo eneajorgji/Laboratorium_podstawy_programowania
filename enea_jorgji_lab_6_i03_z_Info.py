@@ -20,7 +20,7 @@ sum_of_bigger = df_to_sum.sum()
 print("Zadanie 3 \n", sum_of_bigger)
 
 # Zadanie 4
-plt.bar(sum_of_bigger, height=50)
+plt.bar(sum_of_bigger, height=15)
 plt.show()
 
 write_to_csv = sum_of_bigger.to_csv("DF_zad_4.csv")
