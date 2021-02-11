@@ -12,19 +12,28 @@ df = pd.DataFrame(arr_zad_1, columns=["col1", "col2", "col3", "col4", "col5"])
 print("Zadanie 2 \n", df)
 
 # Zadanie 3
-df_to_sum = df.where(df < .5, True)
-df_to_sum = df_to_sum.where(df_to_sum > .5, False)
-print("Zadanie 3 \n", df_to_sum)
+bigger = 0
+smaller = 0
 
-sum_of_bigger = df_to_sum.sum()
-print("Zadanie 3 \n", sum_of_bigger)
+for index, row in df.iterrows():
+    for item in row:
+        if item > .5:
+            bigger += 1
+        else:
+            smaller += 1
+print("Zadanie 3")
+print("bigger: ", bigger)
+print("smaller: ", smaller)
 
 # Zadanie 4
-plt.bar(sum_of_bigger, height=15)
+x = ["bigger", "smaller"]
+y = [bigger, smaller]
+
+plt.bar(x, width=0.4, height=y)
 plt.show()
 
-write_to_csv = sum_of_bigger.to_csv("DF_zad_4.csv")
-
+DF_y = pd.DataFrame(y)
+write_to_csv = DF_y.to_csv("DF_zad_4.csv")
 print("Zadanie 4 \n")
 
 # Zadanie 5
